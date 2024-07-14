@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sanrio Character Survey</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Sanrio Character Survey</h1>
+    <p id="description">This is a survey on the results of the <a href="https://www.sanrio.co.jp/special/characterranking/2024/en/">2024 Sanrio Character Ranking</a>.</p>
+    <form id="survey-form">
+      <label id="name-label">Name: <input type="text" required id="name" placeholder="Hello Kitty"></label>
+      <label id="email-label">Email: <input type="email" required id="email" placeholder="hellokitty@sanrio.com"></label>
+      <label id="number-label">Enter Your Age: <input type="number" required id="number" min="5" max="100" placeholder="9"></label>
+      <label id="dropdown-label">Who is your favorite Sanrio character:
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Hello Kitty</option>
+          <option value="2">My Melody</option>
+          <option value="3">Kuromi</option>
+          <option value="4">Cinnamoroll</option>
+          <option value="5">Pompompurin</option>
+          <option value="6">Keroppi</option>
+          <option value="7">Tuxedosam</option>
+          <option value="8">Little Twin Stars</option>
+          <option value="9">Badtzmaru</option>
+          <option value="10">Other</option>
+        </select>
+      </label>
+      <legend>Choose what best summarizes your thoughts on the rankings:</legend>
+      <label for="perfect">
+        <input type="radio" id="perfect" value="perfect"  name="ranking-thoughts" checked class="inline"> I thought the rankings were perfect!
+      </label>
+      <label for="great">
+        <input type="radio" id="great" class="inline" value="great" name="ranking-thoughts"> They were pretty good, I just disagree on some placements
+      </label>
+      <label for="okay">
+        <input type="radio" id="okay" class="inline" value="okay" name="ranking-thoughts"> The rankings were just okay, they could've been better.
+      </label>
+      <label for="horrible">
+        <input type="radio" id="horrible" class="inline" value="horrible" name="ranking-thoughts"> The rankings were so off and no one got the spot they deserved.
+      </label>
+      <label>Which character(s) do you think were robbed?</label>
+      <label>
+        <input type="checkbox" class="inline" name="robbed-characters" value="hello-kitty"> Hello Kitty
+      </label>
+      <label>
+        <input type="checkbox" class="inline" name="robbed-characters" value="my-melody"> My Melody
+      </label>
+      <label>
+        <input type="checkbox" class="inline" name="robbed-characters" value="kuromi"> Kuromi
+      </label>
+      <label>
+        <input type="checkbox" class="inline" name="robbed-characters" value="cinnamoroll"> Cinnamoroll
+      </label>
+      <label>
+        <input type="checkbox" class="inline" name="robbed-characters" value="pompompurin"> Pompompurin
+      </label>
+      <label>
+        <input type="checkbox" class="inline" name="robbed-characters" value="keroppi"> Keroppi
+      </label>
+      <label>
+        <input type="checkbox" class="inline" name="robbed-characters" value="tuxedosam"> Tuxedosam
+      </label>
+      <label>
+        <input type="checkbox" class="inline" name="robbed-characters" value="little-twin-stars"> Little Twin Stars
+      </label>
+      <label>
+        <input type="checkbox" class="inline" name="robbed-characters" value="badtzmaru"> Badtzmaru
+      </label>
+      <label>Additional comments: 
+        <textarea id="comments" rows="10" cols="30" placeholder="Pompompurin was robbed..."></textarea>
+      </label>
+      <input id="submit" type="submit" value="submit">
+    </form>
+  </body>
+</html>
